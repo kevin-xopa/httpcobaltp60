@@ -1,8 +1,16 @@
 // ============================================
 // HTTP Cobalto 60 — Estilos Globales
 // Solo lo que Vuetify no cubre
-// Variables SASS de Vuetify están en vuetify-settings.scss
 // ============================================
+
+$heading-font: 'Bebas Neue', sans-serif;
+$body-font: 'IBM Plex Sans', sans-serif;
+
+@use 'vuetify' with (
+  $heading-font-family: $heading-font,
+  $body-font-family: $body-font,
+  $font-size-root: 18px
+);
 
 // --- Custom properties por tema (lo que Vuetify no provee) ---
 .v-theme--dark {
