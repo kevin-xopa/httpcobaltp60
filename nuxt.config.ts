@@ -74,6 +74,9 @@ export default defineNuxtConfig({
     defaultLocale: "es-MX",
   },
 
+  ogImage: { enabled: false },
+  schemaOrg: { enabled: false },
+
   pwa: {
     registerType: "autoUpdate",
     manifest: {

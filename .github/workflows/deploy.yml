@@ -28,6 +28,8 @@ jobs:
       - run: npm ci
 
       - run: npm run generate
+        env:
+          NUXT_APP_BASE_URL: /httpcobaltp60/
 
       - uses: actions/upload-pages-artifact@v3
         with:
